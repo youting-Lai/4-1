@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<!-- 手機版縮放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<title>shuzhencang</title>	
+	<!-- css連結 -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style4_1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	
+</script>
+
+</head>
+<style>
+@font-face {
+ font-family: 'HunInn';
+ src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot); /* IE9 Compat Modes */
+ src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+ url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.woff) format("woff"), /* Modern Browsers */
+ url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.ttf) format("truetype"), /* Safari, Android, iOS */
+ url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.svg#SealmemoryHeader) format("svg"); /* Legacy iOS */
+}
+</style> 
+<body>
+		<!-- 導航列 -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a class="navname" href="index.html">書珍倉</a>
+		<div><input type="text" name="key" class="form-control" placeholder="Search" style="height: 35px;">
+		</div>
+		<a href="#">
+			<div class="icon">
+			<img src="img/1.png" width="30" height="30">
+        	</div>
+        </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	    <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         	<ul class="navbar-nav ml-auto">
+         		<li class="nav-item"><a class="nav-link" href="#">二手書籍</a></li>
+         		<li class="nav-item"><a class="nav-link" href="#">公益活動</a></li>
+      			<li class="nav-item"><a class="nav-link" href="#">會員專區</a></li>
+      			<li class="nav-item"><a class="nav-link" href="#section4">關於我們</a></li>
+    		</ul>
+        </div>
+	</nav>
+<!--表單-->
+<div class="contact">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-12">
+				<div>
+					<p class="title text-center">CONTACT</p>
+					<hr class="title_line">
+				</div>
+
+			<form action="index.php" method="get" enctype="mulitipart/form-data">
+				<div class="form">
+					<div>
+						<input type="text"  placeholder="名字" name="MyName" >
+					</div>
+					<div>
+						<input type="text"  placeholder="電話" name="phone" >
+					</div>
+					<div>
+						<input type="text" placeholder="信箱" name="email"  >
+					</div>
+					<div>
+						<textarea   placeholder="內容" name="comment"></textarea>
+					</div>
+					<div class="text-center"><input type="button" onclick="showalert()"  name="Send" value="SEND"></div>
+				</div>	
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- 關於我們-->
+<main class="containermain">
+	<div class="about" id="section3">
+		<div class="container">
+			<div class="rowabout" >
+				<div class="col-md-12 story text-center" id="section4">
+					<div class="servicetext" >關於我們</div>
+				</div>
+			</div>
+		</div>
+		<div class="service">
+			<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="story1">
+							<div class="servicetext1">
+								我們是來自國立交通大學傳播與科技學系的網頁設計團隊a.k.a書珍倉。
+								<br>
+								本專案希望能夠實現二手書交換系統以促進知識流通與資源再利用的目的。
+								<br>
+								如果有願意捐贈與交換的書籍，歡迎來到書珍倉。
+								<br>
+								我們不僅是個二手書倉庫，也希望大家能夠從書海中挖到自己心中最期待的珍藏。
+							</div>
+						</div>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--成員民-->
+<div class="product" id="section2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 ">
+				<p class="title text-center">成員介紹</p>
+				<hr class="title_line">
+			</div>
+		</div>
+		<div class="row">
+			<div class=" col-md-6">
+				<div class="story" >
+					<a data-fancybox="gallery" href="img/10.jpg" data-caption="翁健棋"><img src="img/10.jpg"></a>
+					
+						<div class="pro1">翁健棋<br>朋友就像雪人，你對他尿尿就會消失</div>
+				</div>
+			</div>
+
+
+				<div class="col-md-6">
+				<div class="story">
+					<a data-fancybox="gallery" href="img/11.jpg" data-caption="劉美榆"><img src="img/11.jpg"></a>
+						<div class="pro2">劉美榆<br>台中囝仔，正在努力成為自己</div>
+				</div>
+				</div>
+			</div>
+			
+
+			<div class="row">
+			<div class="col-md-6">
+				<div class="story">
+					<a data-fancybox="gallery" href="img/藝人邀請.png" data-caption="張雲筑"><img src="img/cloud.jpg"></a>
+						<div class="pro3">張雲筑<br> 不自量力探險隊隊長
+							<br>專長是自掘墳墓</div>
+
+				<p></p>
+				</div>
+				</div>
+				<div class="col-md-6">
+				<div class="story">
+					<a data-fancybox="gallery" href="img/12.jpg" data-caption="賴宥廷"><img src="img/12.jpg"></a>
+							<div class="pro4">賴宥廷<br>不及格，就被done<br>看我的大延畢之術</div>
+
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+</main>
+
+
+<!-- footer -->
+<footer>
+		<div class="container">
+			<div class="last">©shuzhencang 2021／No.1001, Daxue Rd., East Dist., Hsinchu City, Taiwan (R.O.C.)
+</div>
+			<div class="rowdown"> 
+			</div>
+		</div>
+</footer>
+	
+
+		<!-- JS連結 -->
+<script src="js/jQuery.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script type="text/javascript" src="jquery.scrolling-parallax.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js">
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
